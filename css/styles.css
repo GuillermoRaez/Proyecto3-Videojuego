@@ -1,25 +1,50 @@
-img {
-    width: 160px;
-}
-
 body {
     background-color: black;
+    margin: 0%;
+}
+
+#wwe {
+    height: 300px;
+    width: 300px;
+
+}
+
+.secvis  {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1,
 h2,
 h3,
 p {
-    color: white
+    color: white;
+    font-size: large;
 }
+
+h2 {display: flex;
+justify-content: center;
+align-items: center;}
 
 section {
     display: flex;
     flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.roster {
+    height: 44vh;
+    width: 45vw;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -30,6 +55,62 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+a {
+    width: 10em;
+    height: 10em;
+    box-sizing: border-box;
+    border: 2px solid white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.luchador {
+    width: 8em;
+    height: 8em;
+    background-color: black;
+    /* margin: 1em; */
+    transition: 0.5s;
+    filter: opacity(0.5);
+}
+
+:hover.luchador {
+    transform: scale(1.25);
+}
+
+.selected {
+    border: 0.5em solid red;
+    /* transition: 0.5s; */
+}
+
+.maquetaEquipos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.equipoLuchadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 28em;
+    width: 15em;
+    margin: 6em;
+}
+
+.Ring {
+    height: 30em;
+    width: 18em;
 }
 
 
