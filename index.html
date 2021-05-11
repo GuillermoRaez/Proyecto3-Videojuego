@@ -8,71 +8,52 @@
     <title>¡Pressing Catch!</title>
 </head>
 <body>
-    
-    <div class="header">
+
+    <section class="secvis" id="stage1">
+        <h1><img id="wwe" src="./img/wwe.svg" alt="WWE"></h1>
         <p>¡Regresa el Pressing Catch a vuestras pantallas!</p>
-        <h1>WWE</h1>
-        <h2>¡Elija sus Luchador!</h2>
-    </div>
+        <p class="textoBasico" onclick="cambiarStage('stage2')">PULSA START</p>
+    </section>
 
-<section>
-    <div class="interface">
-        <a href="#">
-            <img src="./img/Undertaker.png" alt="The Undertaker">
-            <div>
-                <h3>The Undertaker</h3>
-                <!-- <p>The Undertaker es la pesadilla numero 1 de todos los luchadores. Cuando derrota a sus oponentes, tiene la mania de acabar enterrandolos aunque estos sigan con vida.</p> -->
-            </div>
-        </a>
-        <a href="#">
-            <img src="./img/Batista.png" alt="Batista">
-            <div>
-                <h3>Batista</h3>
-                <!-- <p>Este luchador conocido como "el Animal" es un luchador muy feroz dentro del ring. Siempre que se encuentra en el cuadrilatero, acaba destrozando sus oponentes hasta dejarlos casi inconscientes.</p> -->
-            </div>
-        </a>
-        <a href="#">
-            <img src="./img/Edge.png" alt="Edge">
-            <div>
-                <h3>Edge</h3>
-                <!-- <p>El "oportunista ultimo" es su apodo por alguna razón, aunque por sus cualidades fisicas no destaque dentro del ring, este luchador usara de su ingenio y sabiduria para infligir daño a sus rivales mediante trampas.</p> -->
-            </div>
-        </a>
-        <a href="#">
-            <img src="./img/Randy_Orton.png" alt="Randy_Orton">
-            <div>
-                <h3>Randy Orton</h3>
-                <!-- <p>Luchador de tercera generación. Este Luchador vive por y para la lucha. Se hace también llamar "El mata Leyendas"</p> -->
-            </div>
-        </a>
-        <a href="#">
-            <img src="./img/John_Cena.png" alt="John_Cena">
-            <div>
-                <h3>John Cena</h3>
-            </div>
-        </a>
-        <a href="#">
-            <img src="./img/Triple_H.png" alt="Triple_H">
-            <div>
-                <h3>Triple H</h3>
-            </div>
-        </a>
-        <a href="#">
-            <img src="./img/The_Rock.png" alt="The_Rock">
-            <div>
-                <h3>The Rock</h3>
-            </div>
-        </a>
-        <a href="#">
-            <img src="./img/Stone_Cold.png" alt="Stone_Cold">
-            <div>
-                <h3>Stone Cold</h3>
-            </div>
-        </a>
-    </div>
+    <section class="secvis" id="stage2" style="display:none">
+        <h2>¡Elija sus Luchadores!</h2>
+        <div class="roster">
+            <a href="#" id="1" onclick="elijeLuchador(1)">
+                <img class="luchador" src="./img/Undertaker.png" alt="The Undertaker">
+            </a>
+            <a href="#" id="2" onclick="elijeLuchador(2)">
+                <img class="luchador" src="./img/Batista.png" alt="Batista">
+            </a>
+            <a href="#" id="3" onclick="elijeLuchador(3)">
+                <img class="luchador" src="./img/Edge.png" alt="Edge">
+            </a>
+            <a href="#" id="4" onclick="elijeLuchador(4)">
+                <img class="luchador" src="./img/RandyOrton.png" alt="RandyOrton">
+            </a>
+            <a href="#" id="5" onclick="elijeLuchador(5)">
+                <img class="luchador" src="./img/JohnCena.png" alt="JohnCena">
+            </a>
+            <a href="#" id="6" onclick="elijeLuchador(6)">
+                <img class="luchador" src="./img/TripleH.png" alt="TripleH">
+            </a>
+            <a href="#" id="7" onclick="elijeLuchador(7)">
+                <img class="luchador" src="./img/TheRock.png" alt="TheRock">
+            </a>
+            <a href="#" id="8" onclick="elijeLuchador(8)">
+                <img class="luchador" src="./img/StoneCold.png" alt="StoneCold">
+            </a>
+        </div>
+    </section>
 
-    <div class="actions">
+    <section class="secvis" id="stage3" style="display:none">
+        
+        <div class="maquetaEquipos" id="equipos"></div>
 
+    </section>
+
+    <!--<div class="actions">
+
+    </section>
 
     </div>
 
@@ -84,7 +65,7 @@
     <div class="enemy">
 
 
-    </div>
+    </div>-->
 
 </section>
 <script src="./js/luchadores.js"></script>
