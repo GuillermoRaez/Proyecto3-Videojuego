@@ -26,14 +26,14 @@ class Luchadores{
 let player1 = new Luchadores("Undertaker",35,20,15,8);
 let player2 = new Luchadores("Batista",38,15,8,10);
 let player3 = new Luchadores("Edge",28,11,12,15);
-let player4 = new Luchadores("Randy Orton",30,13,14,18);
-let player5 = new Luchadores("John Cena",39,16,7,11);
-let player6 = new Luchadores("Triple H",37,14,8,10);
-let player7 = new Luchadores("The Rock",32,13,9,12);
-let player8 = new Luchadores("Stone Cold",33,13,7,11);
+let player4 = new Luchadores("RandyOrton",30,13,14,18);
+let player5 = new Luchadores("JohnCena",39,16,7,11);
+let player6 = new Luchadores("TripleH",37,14,8,10);
+let player7 = new Luchadores("TheRock",32,13,9,12);
+let player8 = new Luchadores("StoneCold",33,13,7,11);
 
 
-let allPLayers = {
+let todosJugadores = {
     "1" : player1,
     "2" : player2,
     "3" : player3,
