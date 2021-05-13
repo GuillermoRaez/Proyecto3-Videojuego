@@ -2,7 +2,7 @@ let equipo1 = [];
 let equipo2 = [];
 
 const cambiarStage = (destino) => {
-    
+    // console.log(destino);
     let arrStage = ["stage1","stage2","stage3","stage4"];
     
     arrStage = arrStage.filter(val => !destino.includes(val));
@@ -36,6 +36,8 @@ const elijeLuchador = (luchador) => {
                 setTimeout(() => {
                 cambiarStage("stage4")
                 }, 5000);
+
+                arena();
             }
         }
         document.getElementById(luchador).onclick = "";
@@ -65,10 +67,27 @@ const fillEquipos = () => {
     `;
 }
 
-const fighting = () => {
+const arena = () => {
+    let ring = document.getElementById("inRing");
 
+    inRing.innerHTML = `
+    <div class="equipoLuchadores">
+        <div><img class="luchador" src="img/${equipo1[0].nombre}.png" alt="luchador1"></div> 
+    </div>
+
+    <div><img class="inRing" src="img/Fist.png" alt="lucha"></div>
+
+    <div class="equipoLuchadores">
+        <div><img class="luchador" src="img/${equipo2[0].nombre}.png" alt="luchador2"></div>
+    </div>`;
+
+}
+
+const fighting1 = () => {
+   
     j1 = equipo1[0];
     j2 = equipo1[1];
+
 
     console.log("empieza la lucha");
 
@@ -82,4 +101,28 @@ const fighting = () => {
     //}while();
     
 
+}
+
+let button = document.getElementById("musicContainer");
+let music = document.getElementById("music");
+
+const playMusic = () => {
+
+    music.play();
+
+    button.innerHTML = `
+    <button id="musicButton" onclick="pauseMusic()">
+       <i class="fas fa-volume-up"></i>
+    </button>`
+
+}
+
+const pauseMusic = () => {
+    
+    music.pause();
+
+    button.innerHTML = `
+    <button id="musicButton" onclick="playMusic()">
+        <i class="fas fa-volume-mute"></i>
+    </button>`
 }
