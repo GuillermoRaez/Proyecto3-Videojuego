@@ -31,6 +31,10 @@ let player5 = new Luchadores("JohnCena",39,16,7,11);
 let player6 = new Luchadores("TripleH",37,14,8,10);
 let player7 = new Luchadores("TheRock",32,13,9,12);
 let player8 = new Luchadores("StoneCold",33,13,7,11);
+let player9 = new Luchadores("ChrisJericho",29,13,12,11);
+let player10 = new Luchadores("CMPunk",29,14,14,12);
+let player11 = new Luchadores("MattHardy",27,12,13,10);
+let player12 = new Luchadores("JeffHardy",26,15,14,18);
 
 
 let todosJugadores = {
@@ -42,4 +46,9 @@ let todosJugadores = {
     "6" : player6,
     "7" : player7,
     "8" : player8,
+    "9" : player9,
+    "10" : player10,
+    "11" : player11,
+    "12" : player12,
+
 }
