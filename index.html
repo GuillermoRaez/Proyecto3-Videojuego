@@ -10,18 +10,27 @@
 <body>
 
     <section class="secvis" id="stage1">
-        <h1><img id="wwe" src="./img/wwe.svg" alt="WWE"></h1>
+        <h1><img id="wwe" src="./img/WWEFatal4Way.png" alt="F4W"></h1>
         <p>¡Regresa el Pressing Catch a vuestras pantallas!</p>
         <p class="textoBasico" onclick="cambiarStage('stage2')">PULSA START</p>
     </section>
 
     <section class="secvis" id="stage2" style="display:none">
-        <h2>¡Elija sus Luchadores!</h2>
+        <div class="title">
+            <h2>¡Elija sus Luchadores!</h2>
+        </div>
         <div class="roster">
-            <a href="#" id="1" onclick="elijeLuchador(1)">
+        <div class="space"></div>
+        <div class="main_roster">
+            <a href="#" id="1"  onmouseenter="playAudio()"  onclick="elijeLuchador(1)">
                 <img class="luchador" src="./img/Undertaker.png" alt="The Undertaker">
             </a>
-            <a href="#" id="2" onclick="elijeLuchador(2)">
+
+            <audio id="audioID" preload="auto" volume=".3">
+                <source src="./audio/The-Undertaker-WWE-Theme-Song.mp3" type="audio/mp3">
+              </audio>
+          
+            <a href="#" id="2" onmouseenter="" onclick="elijeLuchador(2)">
                 <img class="luchador" src="./img/Batista.png" alt="Batista">
             </a>
             <a href="#" id="3" onclick="elijeLuchador(3)">
@@ -42,14 +51,37 @@
             <a href="#" id="8" onclick="elijeLuchador(8)">
                 <img class="luchador" src="./img/StoneCold.png" alt="StoneCold">
             </a>
+            <a href="#"id="9" onclick="elijeLuchador(9)">
+                <img class="luchador" src="./img/ChrisJericho.png" alt="ChrisJericho">
+            </a>
+            <a href="#"id="10" onclick="elijeLuchador(10)">
+                <img class="luchador" src="./img/CMPunk.png" alt="CMPunk">
+            </a>
+            <a href="#"id="11" onclick="elijeLuchador(11)">
+                <img class="luchador" src="./img/MattHardy.png" alt="MattHardy">
+            </a>
+            <a href="#"id="12" onclick="elijeLuchador(12)">
+                <img class="luchador" src="./img/JeffHardy.png" alt="Jeff_Hardy">
+            </a>
+        
         </div>
+        <div class="space"></div>
+    </div>
     </section>
 
     <section class="secvis" id="stage3" style="display:none">
-        
+
         <div class="maquetaEquipos" id="equipos"></div>
+        
+    </section>
+
+    <section class="secvis" id="stage4" style="display:none">
+        
+        <div class="maquetacombate" id="inRing"></div>
 
     </section>
+
+    <section class></section>
 
     <!--<div class="actions">
 
