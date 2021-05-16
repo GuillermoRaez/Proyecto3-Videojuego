@@ -9,10 +9,6 @@ body {
 
 }
 
-/* .map1 {
-    background-size: cover;
-} */
-
 .secvis  {
     display: flex;
     flex-direction: column;
@@ -64,18 +60,18 @@ section {
 }
 
 .Roster {
-    height: 36em;
+    height: 25em;
     width: auto;
     /* border: 1px solid white; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    /* align-items: center; */
 }
 
 .RawRoster {
-    height: 18em;
-    width: 50%;
+    height: 25em;
+    width: 30em;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -84,8 +80,8 @@ section {
 }
 
 .SmackdownRoster {
-    height: 18em;
-    width: 50%;
+    height: 25em;
+    width: 30em;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -103,8 +99,8 @@ section {
 }
 
 a {
-    width: 5em;
-    height: 5em;
+    width: 8em;
+    height: 12em;
     box-sizing: border-box;
     /* border: 2px solid white; */
     
@@ -115,8 +111,8 @@ a {
 }
 
 .luchador {
-    width: 6em;
-    height: 6em;
+    width: 8em;
+    height: 12em;
     transition: 0.5s;
 }
 
@@ -185,4 +181,6 @@ a {
 span {
     color: white;
 }
+
+
 
