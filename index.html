@@ -17,100 +17,95 @@
 
     <section class="secvis" id="stage2" style="display:none">
         <div class="title">
-            <h2>¡Elija sus Luchadores!</h2>
+            <h2>¡Choose your fighters!</h2>
         </div>
         <div class="Roster">
-        <div class="RawRoster">
-            <a href="#" id="4" onclick="elijeLuchador(4)">
-                <img class="luchador" src="./img/RandyOrton.png" alt="RandyOrton">
-            </a>
-            <a href="#" id="5" onclick="elijeLuchador(5)">
-                <img class="luchador" src="./img/JohnCena.png" alt="JohnCena">
-            </a>
-            <a href="#" id="6" onclick="elijeLuchador(6)">
-                <img class="luchador" src="./img/TripleH.png" alt="TripleH">
-            </a>
-            <a href="#"id="9" onclick="elijeLuchador(9)">
-                <img class="luchador" src="./img/ChrisJericho.png" alt="ChrisJericho">
-            </a>
-            <a href="#"id="12" onclick="elijeLuchador(12)">
-                <img class="luchador" src="./img/JeffHardy.png" alt="Jeff_Hardy">
-            </a>
-            <a href="#" id="8" onclick="elijeLuchador(8)">
-                <img class="luchador" src="./img/StoneCold.png" alt="StoneCold">
-            </a>
+            <div class="RawRoster">
+                <a href="#" id="4" onclick="elijeLuchador(4)">
+                    <img class="luchador" src="./img/RandyOrton.png" alt="RandyOrton">
+                </a>
+                <a href="#" id="5" onclick="elijeLuchador(5)">
+                    <img class="luchador" src="./img/JohnCena.png" alt="JohnCena">
+                </a>
+                <a href="#" id="6" onclick="elijeLuchador(6)">
+                    <img class="luchador" src="./img/TripleH.png" alt="TripleH">
+                </a>
+                <a href="#"id="9" onclick="elijeLuchador(9)">
+                    <img class="luchador" src="./img/ChrisJericho.png" alt="ChrisJericho">
+                </a>
+                <a href="#"id="12" onclick="elijeLuchador(12)">
+                    <img class="luchador" src="./img/JeffHardy.png" alt="Jeff_Hardy">
+                </a>
+                <a href="#" id="8" onclick="elijeLuchador(8)">
+                    <img class="luchador" src="./img/StoneCold.png" alt="StoneCold">
+                </a>
+            </div>
+
+            <div class="blank">OR</div>
+
+            <div class="SmackdownRoster">
+                <a href="#" class="mouse" id="1" onclick="elijeLuchador(1)">
+                    <img class="luchador"  src="./img/Undertaker.png" alt="The Undertaker">
+                </a>
+                <a href="#" id="2" onmouseenter="" onclick="elijeLuchador(2)">
+                    <img class="luchador" src="./img/Batista.png" alt="Batista">
+                </a>
+                <a href="#" id="3" onclick="elijeLuchador(3)">
+                    <img class="luchador" src="./img/Edge.png" alt="Edge">
+                </a>
+                <a href="#" id="7" onclick="elijeLuchador(7)">
+                    <img class="luchador" src="./img/TheRock.png" alt="TheRock">
+                </a>
+                <a href="#"id="10" onclick="elijeLuchador(10)">
+                    <img class="luchador" src="./img/CMPunk.png" alt="CMPunk">
+                </a>
+                <a href="#"id="11" onclick="elijeLuchador(11)">
+                    <img class="luchador" src="./img/MattHardy.png" alt="MattHardy">
+                </a>
+            </div>
         </div>
-
-        <div class="blank">OR</div>
-
-        <div class="SmackdownRoster">
-            <a href="#" class="mouse" id="1" onclick="elijeLuchador(1)">
-                <img class="luchador"  src="./img/Undertaker.png" alt="The Undertaker">
-            </a>
-            <a href="#" id="2" onmouseenter="" onclick="elijeLuchador(2)">
-                <img class="luchador" src="./img/Batista.png" alt="Batista">
-            </a>
-            <a href="#" id="3" onclick="elijeLuchador(3)">
-                <img class="luchador" src="./img/Edge.png" alt="Edge">
-            </a>
-            <a href="#" id="7" onclick="elijeLuchador(7)">
-                <img class="luchador" src="./img/TheRock.png" alt="TheRock">
-            </a>
-            <a href="#"id="10" onclick="elijeLuchador(10)">
-                <img class="luchador" src="./img/CMPunk.png" alt="CMPunk">
-            </a>
-            <a href="#"id="11" onclick="elijeLuchador(11)">
-                <img class="luchador" src="./img/MattHardy.png" alt="MattHardy">
-            </a>
-        </div>
-        </div>
-        
-        <div class="seleccionados" id="seleccionados"></div>
-
-    </section>
-
-        <div class="space"></div>
-    </div>
     </section>
 
     <section class="secvis" id="stage3" style="display:none">
         <div class="maquetaEquipos" id="equipos"></div>
-        
     </section>
 
-    <section class="secvis" id="stage4" style="display:none">
-        <div class="maquetacombate" id="inRing"></div>
-
+    <section class="secvis" id="stage4" style="display:block">
+        <div class="maquetaEquipos">
+            <div class="teamCharacters">
+                <div class="_lifeBar1">
+                    <div class="lifeBarP1" id="fighter1Hit"></div>
+                </div>
+                <div><img class="scenarioFight" id="leftPlayer" alt="luchador1"></div>
+                <span class="simpleText" id="vidaP1"></span>    
+            </div>
+            <div class="teamCharacters">
+                <div class="_lifeBar2">
+                    <div class="lifeBarP2" id="fighter2Hit"></div>
+                </div>
+                <div><img class="scenarioFight" id="rightPlayer" alt="luchador2"></div>
+                <span class="simpleText" id="vidaP2"></span>     
+            </div>
+        </div>
+        
+        <!-- <div class="barras">
+            <div class="pelea">
+                <div id="healthP1"><p id="textoVida1">SP</p></div>
+            </div>
+            <div class="pelea">
+                <div id="healthP2"><p id="textoVida2">SP</p></div>
+            </div>
+        </div>
+        <div class="batalla" id="fight"></div> -->
     </section>
 
     <section class="secvis" id="stage5" style="display:none">
-    
-        <div class="result">
-            <h1 id="win">You WIN!</h1>
-            <h1 id="lose">Game Over!</h1>
+        <div class="winnerScreen simpleText" id="winner"></div>
+                <span class="simpleText" id="playAgain">Do you want to play again?</span>
+            </div>
         </div>
-    
     </section>
 
-
-
-    <!--<div class="actions">
-
-    </section>
-
-    </div>
-
-    <div class="arena">
-
-
-    </div>
-
-    <div class="enemy">
-
-
-    </div>-->
-
-</section>
 <script src="./js/luchadores.js"></script>
 <script src="./js/main.js"></script>
 </body>
