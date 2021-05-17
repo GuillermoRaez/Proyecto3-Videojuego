@@ -2,9 +2,9 @@
 
 # VideoGame
 
-This VideoGame consists on a fighting mechanism where we reproduce a 1vs1 battle in a team battle of 4vs4. Each time a character is defeated, the next character inline will be spawn to fight and succesively.
+This VideoGame consists of a fighting mechanism where we reproduce a 1vs1 battle in a team of 4. Each time a character is defeated, the next character inline will be spawn to fight and succesively.
 
-The game itself is inspired by the theme of Wrestling. In my childhood I used to watch a show called WWE. This show was broadcasted on the TV spanish then, and many of us were used to watch it just because it was funny and entertaining. 
+The game itself is inspired by the theme of Wrestling. In my childhood I used to watch a show called WWE. This show was broadcasted on the spanish TV then, and many of us were used to watch it just because it was funny and entertaining. 
 
 <img src="./img/wwelogo.png" width="300">
 
@@ -40,7 +40,7 @@ Use the keys "left arrow" and "right arrow" from your <img src="./img/Readme/key
 
 <img src="./img/GameScreens/screen5.png">
 
-At the end of the match, you will be redirected to the last Screen, which will show you who won and you will have the uption to reset the Game and start playing again.
+At the end of the match, you will be redirected to the last Screen, which will show you who won and you will have the option to reset the Game and start playing again.
 
 # Future Updates
 
@@ -56,10 +56,10 @@ I would like to add some kind words to my classroom mates who have helped me wit
 
 1. [José Luis Github](https://github.com/ApcarJo) (Thank you for the keyboard events and for the inspiration of some of the fight functions).
 2. [Adriana Github](https://github.com/AdrianaFayos) (Thanks for helping me with the audio for the game, which will be added very soon)
-3. [Alejandro Github](https://github.com/2020-JAUG)  (Thanks to you too buddy, for the help with the audio and setting it with the addEventListener)
+3. [Alejandro Github](https://github.com/2020-JAUG)  (Thanks to you too buddy, for the help with the audio and setting it with the addEventListener, needs to be added too.)
 
 And also a big THANK YOU to my other classroom mates for the companionship and the good mood there is, in and out of class.
 
-Espero que os guste!
+Hope you like it!
 
-AND also remember to just GIT INIT ONCE! :D
+<img src="./img/Readme/stop.png" width="40"> Git Init ONCE! <img src="./img/Readme/stop.png" width="40">
