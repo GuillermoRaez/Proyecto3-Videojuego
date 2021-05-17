@@ -6,7 +6,7 @@ let a=0, b=0;
 
 const cambiarStage = (destiny) => {
     // console.log(destiny);
-    let arrStage = ["stage1","stage2","stage3","stage4","stage5"];
+    let arrStage = ["stage1","stage2","stage3","stage4","stage5", "stage6"];
     
     arrStage = arrStage.filter(val => !destiny.includes(val));
 
@@ -74,11 +74,10 @@ const fightscreen = (a, b) => {
     
     
         let rightPlayer1 = document.getElementById("rightPlayer");
-        rightPlayer1.src=`img/${equipo2[b].name}.png`;
+        rightPlayer1.src=`img/${equipo2[b].nombre}.png`;
         let lifeP2 = document.getElementById("vidaP2");
-        lifeP2.innerHTML = `${equipo2[b].name} : ${equipo2[b].vida}`;
+        lifeP2.innerHTML = `${equipo2[b].nombre} : ${equipo2[b].vida}`;
     };
-
 
 // let fight = document.getElementById("fight");
 // fight.innerHTML = `
@@ -97,10 +96,7 @@ const fighting1 = () => {
     j2 = equipo2[b];
     j1.hit(j2);
 
-    // j2.hit(j1);
-    // // updateLife();
-
-    if(j1.vida <= 0 && b<3) {
+    if(j2.vida <= 0 && b<3) {
         b++;
         document.getElementById("vidaP2").innerHTML = `${equipo2[b].nombre} : ${equipo2[b].vida}`;
         fightscreen(a, b);
@@ -110,8 +106,6 @@ const fighting1 = () => {
 
     let vidaP2 = document.getElementById("vidaP2");
     vidaP2.innerHTML = `${equipo2[b].nombre} : ${equipo2[b].vida}`;
-    // let lifeBar1 = document.getElementById("fighter2Hit");
-    // lifeBar1.style.width = equipo2[b].vida*0.008 + "em";
 
     EndofFight(a,b);
 };
@@ -121,18 +115,16 @@ const fighting2 = () => {
     j2 = equipo2[b];
     j2.hit(j1);
 
-    if(j2.vida <= 0 && a<3) {
+    if(j1.vida <= 0 && a<3) {
         a++;
-        document.getElementById("vidaP2").innerHTML = `${equipo1[a].nombre} : ${equipo1[a].vida}`;
+        document.getElementById("vidaP1").innerHTML = `${equipo1[a].nombre} : ${equipo1[a].vida}`;
         fightscreen(a, b);
     }
 
-    (j2.vida<0) ? j2.vida=0 : console.log("");
+    (j1.vida<0) ? j1.vida=0 : console.log("");
 
-    let vidaP2 = document.getElementById("vidaP2");
-    vidaP2.innerHTML = `${equipo1[a].nombre} : ${equipo1[a].vida}`;
-    // let lifeBar1 = document.getElementById("fighter2Hit");
-    // lifeBar1.style.width = equipo1[a].vida*0.008 + "em";
+    let vidaP1 = document.getElementById("vidaP1");
+    vidaP1.innerHTML = `${equipo1[a].nombre} : ${equipo1[a].vida}`;
 
     EndofFight(a,b);
 }
@@ -141,39 +133,41 @@ const EndofFight = (a, b) => {
     if ((equipo1[a].vida<=0 && a==3) || (equipo2[b].vida<=0 && b==3)){
         let winner = document.getElementById("winner");
 
-        if (equipo1[a].vida<=0 && equipo2[b].vida<=0) { 
-        winner.innerHTML = `¡¡Double KO!!`;
-
-        } else if (equipo2[b].vida<=0) {
+        // if (equipo1[a].vida<=0 && equipo2[b].vida<=0) { 
+        // winner.innerHTML = `¡¡Double KO!!`;
+    // }
+    //    else 
+        if (equipo2[b].vida<=0) {
             winner.innerHTML = `
-            <img src="img/${equipo1[a].nombre}.png">
-            ${team1[i].nombre} has WON!!`;    
+            <div><img class="winnersize" src="img/${equipo1[a].nombre}.png">
+            <p>${equipo1[a].nombre} is the Winner!!<p></div>`;    
             
         } else{
             winner.innerHTML = `
-            <img src="img/${equipo2[b].nombre}.png">
-            ${equipo2[b].nombre} has WON!!`;
+            <div><img class="winnersize" src="img/${equipo2[b].nombre}.png">
+            <p>${equipo2[b].nombre} is the Winner!!</p></div>`;
         }
-    
-        setTimeout(()=> {
+        
+        setTimeout(() => {
             cambiarStage("stage5");
-        }, 0000);
-    }
+        }, 500)
+    }  
+
 }
 
-document.body.onkeydown = (e) =>{
-    if(e.keyCode == 37){
+document.body.onkeydown = (c) =>{
+    if(c.keyCode == 37){
         fighting1();
     }
 
-    if(e.keyCode == 39){
+    if(c.keyCode == 39){
         fighting2();
     }
 }
 
-document.body.onkeyup = (e) =>{
-    if(e.keyCode == 37){}
-    if(e.keyCode == 39){}
+document.body.onkeyup = (c) =>{
+    if(c.keyCode == 37){}
+    if(c.keyCode == 39){}
 }
 
 const reset = document.getElementById('playAgain');
