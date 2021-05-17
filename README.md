@@ -22,13 +22,23 @@ I am delighted to show you my very first videogame made with the following progr
 
 First, you will be asked to press the Start Button.
 
+<img src="./img/GameScreens/screen1.png">
+
 Then, you will proceed by choosing 8 characters from the Roster.
+
+<img src="./img/GameScreens/screen2.png">
 
 A Loading screen will be shown once the characters selected. Be patient, I know you relly want to play.
 
+<img src="./img/GameScreens/screen3.png">
+
 Once the Fight screen is on, you will be able to attack characters from both teams. 
 
+<img src="./img/GameScreens/screen4.png">
+
 Use the keys "left arrow" and "right arrow" from your <img src="./img/Readme/keyboard2.png" width="80"> to attack.
+
+<img src="./img/GameScreens/screen5.png">
 
 At the end of the match, you will be redirected to the last Screen, which will show you who won and you will have the uption to reset the Game and start playing again.
 
