@@ -137,15 +137,16 @@ const EndofFight = (a, b) => {
         // winner.innerHTML = `¡¡Double KO!!`;
     // }
     //    else 
+
         if (equipo2[b].vida<=0) {
             winner.innerHTML = `
             <div><img class="winnersize" src="img/${equipo1[a].nombre}.png">
-            <p>${equipo1[a].nombre} is the Winner!!<p></div>`;    
+            <p>Team 1 ${equipo1[a].nombre} is the Winner!!<p></div>`;    
             
         } else{
             winner.innerHTML = `
             <div><img class="winnersize" src="img/${equipo2[b].nombre}.png">
-            <p>${equipo2[b].nombre} is the Winner!!</p></div>`;
+            <p>Team 2 ${equipo2[b].nombre} is the Winner!! </p></div>`;
         }
         
         setTimeout(() => {
