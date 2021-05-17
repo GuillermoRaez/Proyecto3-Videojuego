@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://example.com/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
     <title>¡Pressing Catch!</title>
 </head>
 <body>
 
-    <section class="secvis" id="stage1">
+<section class="secvis" id="stage1">
         <h1><img id="wwe" src="./img/WWEFatal4Way.png" alt="F4W"></h1>
-        <p>¡Regresa el Pressing Catch a vuestras pantallas!</p>
-        <button class="textoBasico" onclick="cambiarStage('stage2')">PULSA START</button>
-    </section>
+        <p>¡WWE is back on your computer and devices screens!</p>
+        <button class="textoBasico" onclick="cambiarStage('stage2')">PRESS START</button>
+</section>
 
-    <section class="secvis" id="stage2" style="display:none">
+<section class="secvis" id="stage2" style="display:none">
         <div class="title">
             <h2>¡Choose your fighters!</h2>
         </div>
@@ -64,47 +65,40 @@
                 </a>
             </div>
         </div>
-    </section>
+</section>
 
-    <section class="secvis" id="stage3" style="display:none">
+<section class="secvis" id="stage3" style="display:none">
         <div class="maquetaEquipos" id="equipos"></div>
-    </section>
+</section>
 
-    <section class="secvis" id="stage4" style="display:block">
+<section class="secvis" id="stage4" style="display:none">
         <div class="maquetaEquipos">
-            <div class="teamCharacters">
-                <div class="_lifeBar1">
-                    <div class="lifeBarP1" id="fighter1Hit"></div>
-                </div>
-                <div><img class="scenarioFight" id="leftPlayer" alt="luchador1"></div>
-                <span class="simpleText" id="vidaP1"></span>    
+            <div class="equipoPeleadores">
+                <div class="luchador2"><img class="fightScreen" id="leftPlayer" alt="luchador1"></div>
+                <span class="fightText" id="vidaP1"></span>    
             </div>
-            <div class="teamCharacters">
-                <div class="_lifeBar2">
-                    <div class="lifeBarP2" id="fighter2Hit"></div>
-                </div>
-                <div><img class="scenarioFight" id="rightPlayer" alt="luchador2"></div>
-                <span class="simpleText" id="vidaP2"></span>     
+            <div class="equipoPeleadores">
+                <div class="luchador2"><img class="fightScreen" id="rightPlayer" alt="luchador2"></div>
+                <span class="fightText" id="vidaP2"></span>     
             </div>
         </div>
         
-        <!-- <div class="barras">
-            <div class="pelea">
-                <div id="healthP1"><p id="textoVida1">SP</p></div>
-            </div>
-            <div class="pelea">
-                <div id="healthP2"><p id="textoVida2">SP</p></div>
-            </div>
-        </div>
-        <div class="batalla" id="fight"></div> -->
-    </section>
+<!--Important to add in a near future healtbars for the combat scene-->
 
-    <section class="secvis" id="stage5" style="display:none">
-        <div class="winnerScreen simpleText" id="winner"></div>
-                <span class="simpleText" id="playAgain">Do you want to play again?</span>
-            </div>
-        </div>
-    </section>
+</section>
+
+<section class="secvis" id="stage5" style="display:none">
+    <div class="finalScreen">
+        <div class="centerbtn"><span class="finalText">Had enough? Choose wisely.</span>
+            <button class="textoBasico" id="playAgain">PLAY AGAIN</button></div>
+        <div class="winnerScreen" id="winner"><div>
+    </div>
+</section>
+
+<section class="secvis" id="stage6" style="display: none;"></section>
+<!--New stage added to separate the win screen from the loss-->
+
+
 
 <script src="./js/luchadores.js"></script>
 <script src="./js/main.js"></script>
